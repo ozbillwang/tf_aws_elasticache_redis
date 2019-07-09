@@ -71,6 +71,18 @@ variable "vpc_id" {
   description = "VPC ID"
 }
 
+variable "at_rest_encryption_enabled" {
+  type        = string
+  description = "At rest encryption enabled"
+  default     = "false"
+}
+
+variable "transit_encryption_enabled" {
+  type        = string
+  description = "Transit encryption enabled"
+  default     = "false"
+}
+
 variable "redis_parameters" {
   type        = list(string)
   description = "additional parameters modifyed in parameter group"
