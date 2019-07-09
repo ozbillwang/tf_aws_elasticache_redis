@@ -49,7 +49,7 @@ variable "redis_failover" {
 
 variable "redis_node_type" {
   description = "Instance type to use for creating the Redis cache clusters"
-  default     = "cache.m3.medium"
+  default     = "cache.t2.micro"
 }
 
 variable "redis_port" {
@@ -63,8 +63,8 @@ variable "subnets" {
 
 # might want a map
 variable "redis_version" {
-  description = "Redis version to use, defaults to 3.2.10"
-  default     = "3.2.10"
+  description = "Redis version to use"
+  default     = "5.0.4"
 }
 
 variable "vpc_id" {
@@ -96,7 +96,7 @@ variable "redis_maintenance_window" {
 
 variable "redis_snapshot_window" {
   description = "The daily time range (in UTC) during which ElastiCache will begin taking a daily snapshot of your cache cluster. The minimum snapshot window is a 60 minute period"
-  default     = "06:30-07:30"
+  default     = "16:30-17:30"
 }
 
 variable "redis_snapshot_retention_limit" {
