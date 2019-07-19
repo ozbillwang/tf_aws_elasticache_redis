@@ -91,7 +91,7 @@ variable "redis_parameters" {
 
 variable "redis_maintenance_window" {
   description = "Specifies the weekly time range for when maintenance on the cache cluster is performed. The format is ddd:hh24:mi-ddd:hh24:mi (24H Clock UTC). The minimum maintenance window is a 60 minute period"
-  default     = "fri:08:00-fri:09:00"
+  default     = "fri:15:00-fri:16:00"
 }
 
 variable "redis_snapshot_window" {
